@@ -5,11 +5,6 @@ function goToPage2() {
   createHearts();
 }
 
-function playMusic() {
-  const music = document.getElementById('music');
-  music.play().catch(() => console.log("Autoplay bloqueado, clique novamente para tocar."));
-}
-
 function createHearts() {
   setInterval(() => {
     const heart = document.createElement('div');
